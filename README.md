@@ -10,6 +10,7 @@
 license](https://badgen.net/github/license/Naereen/Strapdown.js)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
 [![Ask Me Anything
 !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Naereen/ama)
+
 <!-- badges: end -->
 
 The goal of enrichHarmonizome is to provide suport to access and
