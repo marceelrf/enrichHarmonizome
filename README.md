@@ -4,6 +4,12 @@
 # enrichHarmonizome
 
 <!-- badges: start -->
+
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
+[![GitHub
+license](https://badgen.net/github/license/Naereen/Strapdown.js)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
+[![Ask Me Anything
+!](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Naereen/ama)
 <!-- badges: end -->
 
 The goal of enrichHarmonizome is to provide suport to access and
@@ -25,6 +31,7 @@ This is a basic example which shows you how to solve a common problem:
 
 ``` r
 library(enrichHarmonizome)
+library(clusterProfiler)
 ## basic example code
 ```
 
