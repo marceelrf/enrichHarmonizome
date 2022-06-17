@@ -26,20 +26,32 @@ hDatasets_ENRICHMENT <- function(gene, pvalueCutoff = 0.05, pAdjustMethod = "BH"
   require(org.Hs.eg.db)
   require(dplyr)
 
-  tmp <- enricher(gene = gene,
-           pvalueCutoff = pvalueCutoff,
-           pAdjustMethod = pAdjustMethod,
-           universe = universe,
-           minGSSize = minGSSize,
-           maxGSSize = maxGSSize,
-           qvalueCutoff = qvalueCutoff,
-           TERM2GENE = TERM2GENE,
-           TERM2NAME = TERM2NAME)
+  if(is.na(TERM2NAME)){
+    tmp <- enricher(gene = gene,
+                    pvalueCutoff = pvalueCutoff,
+                    pAdjustMethod = pAdjustMethod,
+                    universe = universe,
+                    minGSSize = minGSSize,
+                    maxGSSize = maxGSSize,
+                    qvalueCutoff = qvalueCutoff,
+                    TERM2GENE = TERM2GENE,
+                    TERM2NAME = TERM2NAME)
 
-  if(is.na(TERM2NAME)) {
     tmp@result <-  tmp@result %>%
-      select(-Description)
+           dplyr::select(-Description)
+
+  } else{
+    tmp <- enricher(gene = gene,
+                    pvalueCutoff = pvalueCutoff,
+                    pAdjustMethod = pAdjustMethod,
+                    universe = universe,
+                    minGSSize = minGSSize,
+                    maxGSSize = maxGSSize,
+                    qvalueCutoff = qvalueCutoff,
+                    TERM2GENE = TERM2GENE,
+                    TERM2NAME = TERM2NAME)
   }
+
 
 
   return(tmp)

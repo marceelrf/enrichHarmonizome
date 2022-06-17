@@ -1,3 +1,11 @@
+#' Title
+#'
+#' @param href
+#'
+#' @return
+#' @export
+#'
+#' @examples
 hDatasets_2genelist <- function(href) {
 
   #This function download the data of a specific dataset into a gene list format
@@ -7,7 +15,9 @@ hDatasets_2genelist <- function(href) {
   require(magrittr)
   require(dplyr)
   require(purrr)
-  library(tidyr)
+  require(tidyr)
+  require(glue)
+
 
 
   req <- httr::GET(url = paste("https://maayanlab.cloud/Harmonizome",href,sep = ""))
@@ -30,10 +40,11 @@ hDatasets_2genelist <- function(href) {
       purrr::pluck("attribute","name")
 
     print("= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =")
+
     if(nrow(list_json$geneSets)-i != 0){
-      print(paste("Faltam ",nrow(list_json$geneSets)-i))
+      print(glue("{i} of {nrow(list_json$geneSets)} done!"))
     } else {
-      print("ACABOUUU!!!!")
+      print(glue("{i} of {nrow(list_json$geneSets)} done. Finish!!!!"))
     }
   }
   final_list <- map(final_list,.f = ~unnest(.x, gene))
