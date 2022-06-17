@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of enrichHarmonizome is to provide suport to access and download data from Hamonizome API.
+The goal of enrichHarmonizome is to provide suport to access and download data through Hamonizome API.
 
 ## Installation
 

@@ -7,7 +7,7 @@
 <!-- badges: end -->
 
 The goal of enrichHarmonizome is to provide suport to access and
-download data from Hamonizome API.
+download data through Hamonizome API.
 
 ## Installation
 
