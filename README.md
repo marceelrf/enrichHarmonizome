@@ -4,6 +4,9 @@
 # enrichHarmonizome
 
 <!-- badges: start -->
+
+![Your Repository’s
+Stats](https://github-readme-stats.vercel.app/api?username=Your_GitHub_Username&show_icons=true)
 <!-- badges: end -->
 
 The goal of enrichHarmonizome is to provide suport to access and
@@ -25,6 +28,7 @@ This is a basic example which shows you how to solve a common problem:
 
 ``` r
 library(enrichHarmonizome)
+library(clusterProfiler)
 ## basic example code
 ```
 
