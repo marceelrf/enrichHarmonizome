@@ -5,11 +5,11 @@
 
 <!-- badges: start -->
 
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/marceelrf/enrichHarmonizome/graphs/commit-activity)
 [![GitHub
-license](https://badgen.net/github/license/Naereen/Strapdown.js)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
+license](https://badgen.net/github/license/Naereen/Strapdown.js)](https://github.com/marceelrf/enrichHarmonizome/blob/master/License)
 [![Ask Me Anything
-!](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Naereen/ama)
+!](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://github.com/marceelrf#-ask-me-anything)
 
 <!-- badges: end -->
 
